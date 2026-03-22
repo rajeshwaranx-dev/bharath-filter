@@ -44,7 +44,7 @@ MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False)
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Leechx:Leech@cluster0.wfp9vkw.mongodb.net/?appName=Cluster0")
 
 UPDATE_NOTIFICATION = bool(environ.get('UPDATE_NOTIFICATION', False))
-UPDATE_CHANNEL = int(environ.get('UPDATE_CHANNEL', ''))
+UPDATE_CHANNEL = int(environ.get('UPDATE_CHANNEL', '-1002233978875'))
 IMAGE_FETCH = bool(environ.get('IMAGE_FETCH', True))
 LINK_PREVIEW = bool(environ.get('LINK_PREVIEW', False))
 ABOVE_PREVIEW = bool(environ.get('ABOVE_PREVIEW', False))
@@ -53,7 +53,7 @@ TMDB_POSTER = bool(environ.get('TMDB_POSTER', True))
 LANDSCAPE_POSTER = bool(environ.get('LANDSCAPE_POSTER', True))
 
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002497903505'))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://i.ibb.co/xqNtSMpS/photo-2025-09-18-15-24-38-7551450511015149572.jpg")
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/TechifyBots")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/TechifyBots")
@@ -104,7 +104,7 @@ FILES_LIMIT = int(environ.get("FILES_LIMIT", "48"))
 QUALITY_LIMIT = bool(environ.get('QUALITY_LIMIT', False)) 
 FREE_QUALITIES = ["360p", "480p"]
 
-PORT = int(environ.get("PORT", "8080"))
+PORT = int(environ.get("PORT", "8036"))
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
