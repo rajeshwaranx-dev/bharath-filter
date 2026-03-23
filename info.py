@@ -14,19 +14,19 @@ def is_enabled(value, default):
         return default
 
 SESSION = environ.get('SESSION', 'techifybots')
-API_ID = int(environ.get('API_ID', '23361081'))
-API_HASH = environ.get('API_HASH', '0605c5395b91ead763072251e20c3417')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8361529441:AAGfl604PFp9OHLKyL8kcTnQoBTCo8oXAIg")
+API_ID = int(environ.get('API_ID', '23173288'))
+API_HASH = environ.get('API_HASH', '94f82e41c43528971068bcd31d4a20e9')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7605918235:AAEyQwJEOMPKQwh5DcryaYGpA5URkcn8aDA")
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 INDEX_CAPTION = bool(environ.get('INDEX_CAPTION', False))
 COVER = bool(environ.get('COVER', False))
-PICS = (environ.get('PICS', 'https://graph.org/file/dc8d94be0c5b2c9693e75-707e6fdfb7fc8d3e2c.jpg')).split()
+PICS = (environ.get('PICS', 'https://i.ibb.co/JjG2whSJ/photo-2025-07-19-12-57-07.jpg')).split()
 MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://i.ibb.co/2769f1rF/photo-2025-09-03-14-48-34-7548400762112442372.jpg")
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1714147365 ').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002030715343').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002289263173'))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002382180624').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002105746544'))
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '0'))
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002737733323'))
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002105746544'))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 AUTH_CHANNELS = [int(ch) for ch in environ.get("AUTH_CHANNELS", "").split() if ch and id_pattern.match(ch)]
 AUTH_REQ_CHANNELS = [int(ch) for ch in environ.get("AUTH_REQ_CHANNELS", "-1003518468917").split() if ch and id_pattern.match(ch)]
